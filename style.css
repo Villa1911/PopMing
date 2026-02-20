@@ -25,15 +25,52 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Nav Bar */
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  background-color: #DE6449;
+  padding: 1rem 5%;
 }
 
-ul {
-  list-style: none;
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .2rem;
+}
+
+.logo img {
+  max-width: 1.2rem;
+  padding: 0;
+}
+
+header h1 {
+  font-size: 1.2rem;
+}
+
+ul li {
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 nav ul {
+  padding: 0;
   display: flex;
+  gap: 1rem;
+  list-style: none;
 }
